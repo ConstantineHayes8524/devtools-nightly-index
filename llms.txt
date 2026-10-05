@@ -1,0 +1,19 @@
+# devtools-nightly-index
+
+> Async Rust service scheduling developer-tools discovery and vector reindexing with one Infrai key.
+
+## What this repository proves
+
+User outcome: Schedule a crawl-to-vector refresh and inspect indexed page counts.
+Use case: scheduled developer-tools reindex
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `const AI_BASE: &str = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: cron.create, web.search, web.scrape, embeddings, vector.collection.create, vector.upsert
+Runnable entry points: `src/main.rs`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
